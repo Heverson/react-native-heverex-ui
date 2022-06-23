@@ -1,25 +1,36 @@
 import * as React from 'react';
+import { Alert, StyleSheet, View } from 'react-native';
 
-import { StyleSheet, View } from 'react-native';
-import { HeverexUiView } from 'react-native-heverex-ui';
+import { Button, ButtonTap, ButtonText, Home } from 'react-native-heverex-ui';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <HeverexUiViewManager color="#32a852" style={styles.box} />
-    </View>
+    <Home>
+      <View style={styles.row}>
+        <Button onPress={() => Alert.alert('👋≧◉ᴥ◉≦ Welcome UI Kit Heverex')}>
+          Your Button 👋≧◉ᴥ◉≦
+        </Button>
+      </View>
+      <View style={styles.row}>
+        <ButtonTap
+          onPress={() => Alert.alert('👋≧◉ᴥ◉≦ Welcome UI Kit Heverex')}
+        >
+          Your Button Tap
+        </ButtonTap>
+      </View>
+      <View style={styles.row}>
+        <ButtonText
+          onPress={() => Alert.alert('👋≧◉ᴥ◉≦ Welcome UI Kit Heverex')}
+        >
+          Your Button
+        </ButtonText>
+      </View>
+    </Home>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  row: {
+    margin: 10,
   },
 });
