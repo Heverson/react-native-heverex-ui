@@ -1,11 +1,15 @@
-# react-native-heverex-ui
+<h1  align="center">React Native Heverex UI</h1>
 
-UI Kit React Native
+<p align="center">
+This is a (POC) Proof of Concept for create React Native Component Library.
+</p>
 
 ## Installation
 
 ```sh
 npm install react-native-heverex-ui
+or
+yarn add react-native-heverex-ui
 ```
 
 ## Usage
