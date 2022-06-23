@@ -11,11 +11,21 @@ npm install react-native-heverex-ui
 ## Usage
 
 ```js
-import { HeverexUiView } from "react-native-heverex-ui";
+import {View, Alert} from 'react-native';
+
+import { 
+    Button, 
+    ButtonTap, 
+    ButtonText
+} from 'react-native-heverex-ui';
+
 
 // ...
-
-<HeverexUiView color="tomato" />
+<View>
+    <Button onPress={() => Alert.alert('👋≧◉ᴥ◉≦ Welcome UI Kit Heverex')}>
+        Your Button 👋≧◉ᴥ◉≦
+    </Button>
+</View>
 ```
 
 ## Contributing
