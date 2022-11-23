@@ -10,10 +10,7 @@
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.4",
-    "react-native-gesture-handler": "^2.4.2",
-    "react-native-reanimated": "^2.8.0",
-    "styled-components": "^5.3.5"
+    "react-native": "0.63.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

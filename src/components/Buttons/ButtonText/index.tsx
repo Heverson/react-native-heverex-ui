@@ -1,17 +1,13 @@
 import React from 'react';
-import { Text } from 'react-native';
-import {
-  BorderlessButton,
-  BorderlessButtonProperties,
-} from 'react-native-gesture-handler';
+import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
-interface ButtonTextProps extends BorderlessButtonProperties {
+interface ButtonTextProps extends TouchableOpacityProps {
   children?: React.ReactNode;
 }
 export function ButtonText({ children, ...rest }: ButtonTextProps) {
   return (
-    <BorderlessButton {...rest}>
+    <TouchableOpacity {...rest}>
       <Text>{children}</Text>
-    </BorderlessButton>
+    </TouchableOpacity>
   );
 }
