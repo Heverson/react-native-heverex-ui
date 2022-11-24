@@ -7,11 +7,13 @@ import {
   ButtonText,
   Home,
   InputText,
+  Title,
 } from 'react-native-heverex-ui';
 
 export default function App() {
   return (
     <Home>
+      <Title>Heverex Ui Component</Title>
       <View style={styles.row}>
         <Button onPress={() => Alert.alert('👋≧◉ᴥ◉≦ Welcome UI Kit Heverex')}>
           Your Button 👋≧◉ᴥ◉≦
